@@ -165,42 +165,42 @@ p{
     display:block; margin:auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
     .pic{
         width: 25%;
         display:block; margin:auto;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 499px) {
     .pic{
         width: 60%;
         display:block; margin:auto;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
     .pic2{
-        width: 40%;
+        width: 30%;
         display:block; margin:auto;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 499px) {
     .pic2{
         width: 45%;
         display:block; margin:auto;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
     .pic3{
         width: 40%;
         display:block; margin:auto;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 499px) {
     .pic3{
         width: 80%;
         display:block; margin:auto;
