@@ -159,3 +159,51 @@ p{
 .word:hover::before {
     width:100%;
   }
+
+.pic{
+    width: 25%;
+    display:block; margin:auto;
+}
+
+@media screen and (min-width: 768px) {
+    .pic{
+        width: 25%;
+        display:block; margin:auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pic{
+        width: 60%;
+        display:block; margin:auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pic2{
+        width: 40%;
+        display:block; margin:auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pic2{
+        width: 45%;
+        display:block; margin:auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pic3{
+        width: 40%;
+        display:block; margin:auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pic3{
+        width: 80%;
+        display:block; margin:auto;
+    }
+}
+
