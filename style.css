@@ -21,6 +21,13 @@
     margin-left: 10%;
     margin-right: 10%;
   }
+  .block{
+    margin-right: 5%;
+  }
+  .el-dialog{
+    margin-top: 10%;
+    width: 80%;
+  }
   
 }
 
