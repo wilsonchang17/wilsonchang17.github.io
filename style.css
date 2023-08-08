@@ -1,0 +1,59 @@
+@media screen and (min-width: 850px) {
+  .center{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .el-dialog{
+    margin-top: 10%;
+    width: 30%;
+  }
+
+
+
+}
+
+@media screen and (max-width: 850px) {
+  .center{
+    text-align: center;
+  }
+  .adjust{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+}
+
+
+
+.el-menu-demo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10rem;
+  z-index: 999;
+}
+
+
+.circle{
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+
+}
+
+
+
+
+span {
+  white-space: pre-wrap;
+}
+
+.box-card{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+

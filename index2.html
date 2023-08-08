@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"
+            href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body class="center">
+
+        <div id="app">
+            <el-menu class="el-menu-demo" mode="horizontal" @select="navigateTo"
+                background-color="#545c64" text-color="#fff"
+                active-text-color="#ffd04b">
+                <el-menu-item index="index.html">About me</el-menu-item>
+                <el-menu-item index="index2.html">Projects</el-menu-item>
+            </el-menu>
+            <div class="adjust">
+            <el-card style="margin-top:5rem">
+                <img src="projectpic/wesgpa.png" class="image"
+                    style="max-width: 75%; max-height:75%;">
+                <div style="margin-left:20%; margin-right:20%;">
+                    <span>Convert NDHU's GPA into WES GPA standard</span><br>
+                    <a href="https://github.com/wilsonchang17/WES_GPA">
+                        <el-button type="text" class="button">Link to Github</el-button>
+                    </a>
+                </div>
+            </el-card>
+            <el-divider></el-divider>
+            <el-card >
+                <img src="projectpic/graduationproject.png" class="image"
+                    style="max-width: 75%; max-height:75%;">
+                <div style="margin-left:20%; margin-right:20%;">
+                    <span>Graduation group project</span><br>
+                    <a href="https://github.com/michael21910/ndhu-csie-plus">
+                        <el-button type="text" class="button">Link to Github</el-button>
+                    </a>
+                </div>
+            </el-card>
+            <el-divider></el-divider>
+            <el-card >
+                <img src="projectpic/smartcontract.png" class="image"
+                    style="max-width: 75%; max-height:75%;">
+                <div style="margin-left:20%; margin-right:20%;">
+                    <span>Website integrating smart contracts for distributing Coupons</span><br>
+                    <a href="https://github.com/wilsonchang17/coupon_smartcontract">
+                        <el-button type="text" class="button">Link to Github</el-button>
+                    </a>
+                </div>
+            </el-card>
+            <el-divider></el-divider>
+            <el-card >
+                <img src="projectpic/swift.png" class="image"
+                    style="max-width: 75%; max-height:75%;">
+                <div style="margin-left:20%; margin-right:20%;">
+                    <span>iOS App showing list of attractions in Taiwan</span><br>
+                    <a href="https://github.com/wilsonchang17/coupon_smartcontract">
+                        <el-button type="text" class="button">Link to Github</el-button>
+                    </a>
+                </div>
+            </el-card>
+            <el-divider></el-divider>
+            <el-card >
+                <img src="projectpic/mask.png" class="image"
+                    style="max-width: 75%; max-height:75%;">
+                <div style="margin-left:20%; margin-right:20%;">
+                    <span>Face Mask Detection</span><br>
+                    <a href="https://github.com/michael21910/face-mask-detection">
+                        <el-button type="text" class="button">Link to Github</el-button>
+                    </a>
+                </div>
+            </el-card>
+            <el-divider></el-divider>
+            <el-card >
+
+                <div style="margin-left:20%; margin-right:20%;">
+                    <span>Checkout more projects on my Github</span><br>
+                    <a href="https://github.com/wilsonchang17?tab=repositories">
+                        <el-button type="text" class="button">Github</el-button>
+                    </a>
+                </div>
+            </el-card>
+            <el-divider></el-divider>
+        </div>
+        </div>
+
+    </body>
+
+    <script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                activeIndex: '1',
+                activeIndex2: '2',
+                circleUrl: "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
+            };
+        },
+        methods: {
+            navigateTo(page) {
+                window.location.href = page;
+              },
+        }
+
+    })
+</script>
+
+</html>
