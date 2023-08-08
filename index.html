@@ -1,127 +1,147 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-      <title>Wilson's website</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"
-            href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body class="center">
-        <div id="app">
-            <!--navigation -->
-            <el-menu class="el-menu-demo" mode="horizontal" @select="navigateTo" background-color="#545c64" text-color="#fff"  >
-                <el-menu-item index="index.html">About me</el-menu-item>
-                <el-menu-item index="index2.html">Projects</el-menu-item>
-            </el-menu>
-            <!--profile picture-->
-            <el-col>
-                <div class="circle">
-                    <div class="block"><el-avatar :size="200"
-                            :src="circleUrl"></el-avatar></div>
-                </div>
-            </el-col>
-            <!--info-->
-            <span>Hi, I'm Wilson Chang</span>
-            <br>
-            <el-button type="text" @click="centerDialogVisible = true">More about me</el-button>
-            <el-dialog 
-                title="HiHiHi"
-                :visible.sync="centerDialogVisible"
-                center>
-                <span>
-Welcome to my website. I'm using Vue.js and Element UI to build up this website.
-I am a graduate of National Dong Hwa University, major in Computer Science and Information Engineering.
-Mainly I want to share some of the projects and stuffs that I've done at school.
-                </span>
-            </el-dialog>
-            <!--link-->
-            <h2>Contact Me</h2>
-            <el-divider></el-divider>
-            <div style="display: flex; align-items: center; justify-content: center; margin-bottom:2%">
-                <i class="el-icon-message"></i>
-                <h5 style="margin: 0;">&nbsp;&nbsp;wilson891221@gmail.com</h5>
-            </div>
-
-            <el-card shadow="hover" class="box-card">
-                <div>
-                    <el-link href="https://github.com/wilsonchang17" >Github</el-link><br>
-                    <el-link href="https://www.linkedin.com/in/wilson-chang-30994720a/" style="padding-top: 10px;">Linkedin</el-link><br>
-                    <el-link href="https://www.facebook.com/profile.php?id=100007509667977"  style="padding-top: 10px;">Facebook</el-link><br>
-                    <el-link href="https://www.instagram.com/wilsonnchang/"  style="padding-top: 10px;">Instagram</el-link><br>
-                </div>
-              </el-card>
-              
-              <br>
-              <h2>Experience</h2>
-              <el-divider></el-divider> 
-            <div class="block">
-                <el-timeline>
-                    <el-timeline-item timestamp="2023/2 ~ 2023/6" placement="top">
-                        <el-card>
-                          <h4>Teaching Assistant (Fundamental computer programming-Python course), NDHU</h4>
-                          <p> - Drew up examinations,graded and explained programming assignments for approximately 100 students.</p>
-                        </el-card>
-                      </el-timeline-item>
-                  <el-timeline-item timestamp="2023/1 ~ 2023/2" placement="top">
-                    <el-card>
-                      <h4>Intern, Digital Information Department, Shin Kong Financial Holding Co., Ltd., Head office, Taiwan</h4>
-                      <p> - Assisted in the front-end and back-end development of the website using Vue.js and Spring Boot.</p>
-                      <P> - Built tools for analyzing and organizing data with Python programs.</p>
-                    </el-card>
-                  </el-timeline-item>
-                  <el-timeline-item timestamp="2022/9 ~ 2023/6" placement="top">
-                    <el-card>
-                      <h4>Part-time worker, Academy of English Empowerment, NDHU</h4>
-                      <p>Sent and received official documents, and completed miscellaneous tasks as assigned.</p>
-                    </el-card>
-                  </el-timeline-item>
-                  <el-timeline-item timestamp="2021/9 ~ 2022/5" placement="top">
-                    <el-card>
-                      <h4>Google Developer Students Clubs(Core team member), NDHU</h4>
-                      <p> - Collaborated on lecture courses with other members.</p>
-                        <p> - Taught and explained Python packages</p>
-                    </el-card>
-                  </el-timeline-item>
-
-                  <el-timeline-item timestamp="2021/8 ~ 2022/7" placement="top">
-                    <el-card>
-                      <h4>Graduation Project: <br>A Q&A Platform with Automatic Post Review Based on Natural Language Processing and Deep Learning</h4>
-                      <p> - Excellent Award, NDHU CSIE Department</p>
-                      <p> - 4 students group project</p>
-                        
-                    </el-card>
-                  </el-timeline-item>
-
-                  <el-timeline-item timestamp="2020/9 ~ 2021/1" placement="top">
-                    <el-card>
-                      <h4>Member, Hult Prize at NDHU, Hult Prize Foundation</h4>
-                      <p> - Cooperated with 20-30 students to organize Hult Prize intramural competition.</p>
-                    </el-card>
-                  </el-timeline-item>
-
-                  <el-timeline-item timestamp="2020/4" placement="top">
-                    <el-card>
-                      <h4>2020 Hult Prize Ho Chi Minh Regional Summit</h4>
-                      <p> - Representing National Dong Hwa University in the Regional Summit(Ho Chi Minh City, Vietnam).</p>
-                    </el-card>
-                  </el-timeline-item>
-
-
-                </el-timeline>
-
-              </div>
-
+  <head>
+    <title>Wilson's website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class="center">
+    <div id="app">
+      <!--navigation -->
+      <el-menu class="el-menu-demo" mode="horizontal" @select="navigateTo"
+        background-color="#545c64" text-color="#fff">
+        <el-menu-item index="index.html">About me</el-menu-item>
+        <el-menu-item index="index2.html">Projects</el-menu-item>
+      </el-menu>
+      <!--profile picture-->
+      <el-col>
+        <div class="circle">
+          <div class="block"><el-avatar :size="200"
+              :src="circleUrl"></el-avatar></div>
         </div>
-        
+      </el-col>
+      <!--info-->
+      <span>Hi, I'm Wilson Chang</span>
+      <br>
+      <el-button type="text" @click="centerDialogVisible = true">More about me</el-button>
+      <el-dialog
+        title="HiHiHi"
+        :visible.sync="centerDialogVisible"
+        center>
+        <span>
+          Welcome to my website. I'm using Vue.js and Element UI to build up
+          this website.
+          I am a graduate of National Dong Hwa University, major in Computer
+          Science and Information Engineering.
+          Mainly I want to share some of the projects and stuffs that I've done
+          at school.
+        </span>
+      </el-dialog>
+      <!--link-->
+      <h2>Contact Me</h2>
+      <el-divider></el-divider>
+      <div
+        style="display: flex; align-items: center; justify-content: center; margin-bottom:2%">
+        <i class="el-icon-message"></i>
+        <h5 style="margin: 0;">&nbsp;&nbsp;wilson891221@gmail.com</h5>
+      </div>
 
-    </body>
+      <el-card shadow="hover" class="box-card">
+        <div>
+          <el-link href="https://github.com/wilsonchang17">Github</el-link><br>
+          <el-link href="https://www.linkedin.com/in/wilson-chang-30994720a/"
+            style="padding-top: 10px;">Linkedin</el-link><br>
+          <el-link
+            href="https://www.facebook.com/profile.php?id=100007509667977"
+            style="padding-top: 10px;">Facebook</el-link><br>
+          <el-link href="https://www.instagram.com/wilsonnchang/"
+            style="padding-top: 10px;">Instagram</el-link><br>
+        </div>
+      </el-card>
 
-    <script src="https://unpkg.com/vue@2/dist/vue.js"></script>
-    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-    <script>
+      <br>
+      <h2>Experience</h2>
+      <el-divider></el-divider>
+      <div class="block">
+        <el-timeline>
+          <el-timeline-item timestamp="2023/2 ~ 2023/6" placement="top">
+            <el-card>
+              <h4>Teaching Assistant (Fundamental computer programming-Python
+                course), NDHU</h4>
+              <p> - Drew up examinations,graded and explained programming
+                assignments for approximately 100 students.</p>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2023/1 ~ 2023/2" placement="top">
+            <el-card>
+              <h4>Intern, Digital Information Department, Shin Kong Financial
+                Holding Co., Ltd., Head office, Taiwan</h4>
+              <p> - Assisted in the front-end and back-end development of the
+                website using Vue.js and Spring Boot.</p>
+              <p> - Built tools for analyzing and organizing data with Python
+                programs.</p>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2022/9 ~ 2023/6" placement="top">
+            <el-card>
+              <h4>Part-time worker, Academy of English Empowerment, NDHU</h4>
+              <p>Sent and received official documents, and completed
+                miscellaneous tasks as assigned.</p>
+            </el-card>
+          </el-timeline-item>
+          <el-timeline-item timestamp="2021/9 ~ 2022/5" placement="top">
+            <el-card>
+              <h4>Google Developer Students Clubs(Core team member), NDHU</h4>
+              <p> - Collaborated on lecture courses with other members.</p>
+              <p> - Taught and explained Python packages</p>
+            </el-card>
+          </el-timeline-item>
+
+          <el-timeline-item timestamp="2021/8 ~ 2022/7" placement="top">
+            <el-card>
+              <h4>Graduation Project: <br>A Q&A Platform with Automatic Post
+                Review Based on Natural Language Processing and Deep Learning</h4>
+              <p> - Excellent Award, NDHU CSIE Department</p>
+              <p> - 4 students group project</p>
+
+            </el-card>
+          </el-timeline-item>
+
+          <el-timeline-item timestamp="2020/9 ~ 2021/1" placement="top">
+            <el-card>
+              <h4>Member, Hult Prize at NDHU, Hult Prize Foundation</h4>
+              <p> - Cooperated with 20-30 students to organize Hult Prize
+                intramural competition.</p>
+            </el-card>
+          </el-timeline-item>
+
+          <el-timeline-item timestamp="2020/4" placement="top">
+            <el-card>
+              <h4>2020 Hult Prize Ho Chi Minh Regional Summit</h4>
+              <p> - Representing National Dong Hwa University in the Regional
+                Summit(Ho Chi Minh City, Vietnam).</p>
+            </el-card>
+          </el-timeline-item>
+
+        </el-timeline>
+        <br><br><br>
+
+      </div>
+
+    </div>
+    <footer style="padding-bottom: 2%;">
+      Copyright © 2023 Wilson Chang, All Rights Reserved.
+    </footer>
+
+  </body>
+
+  <script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
     new Vue({
         el: '#app',
         data() {
