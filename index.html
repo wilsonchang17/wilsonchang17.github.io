@@ -23,16 +23,16 @@
                 </div>
             </el-col>
             <!--info-->
-            <span>Hi, I'm Wilson</span>
+            <span>Hi, I'm Wilson Chang</span>
             <br>
-            <el-button type="text" @click="centerDialogVisible = true">Know More</el-button>
+            <el-button type="text" @click="centerDialogVisible = true">More about me</el-button>
             <el-dialog
                 title="HiHiHi"
                 :visible.sync="centerDialogVisible"
                 center>
                 <span>
 Welcome to my website. I'm using Vue.js and Element UI to build up this website.
-I graduated from the Department of Computer Science and Information Engineering at National Dong Hwa University.
+I am a graduate of National Dong Hwa University, major in Computer Science and Information Engineering.
 Mainly I want to share some of the projects and stuffs that I've done at school.
                 </span>
             </el-dialog>
@@ -111,8 +111,6 @@ Mainly I want to share some of the projects and stuffs that I've done at school.
 
                 </el-timeline>
 
-                
-
               </div>
 
         </div>
@@ -132,12 +130,15 @@ Mainly I want to share some of the projects and stuffs that I've done at school.
                 circleUrl: "me.jpg",
                 centerDialogVisible: false,
 
+
             };
         },
+      
         methods: {
             navigateTo(page) {
                 window.location.href = page;
               },
+              
         }
 
     })

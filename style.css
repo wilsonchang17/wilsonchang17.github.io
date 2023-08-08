@@ -1,4 +1,4 @@
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 720px) {
   .center{
     text-align: center;
     margin-left: 30%;
@@ -13,7 +13,7 @@
 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 720px) {
   .center{
     text-align: center;
   }
@@ -54,6 +54,8 @@ span {
   margin-left: 25%;
   margin-right: 25%;
 }
+
+
 
 
 
