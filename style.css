@@ -51,6 +51,7 @@ html, body {
   margin-bottom: 10rem;
   z-index: 999;
   background-color: #545c64;
+
   background-image: linear-gradient(to bottom, transparent 0%,#545c64 100%);
 }
 
@@ -74,6 +75,7 @@ span {
   margin-left: 25%;
   margin-right: 25%;
 }
+
 
 
 
