@@ -19,6 +19,8 @@ html, body {
   }
   .adjust{
     padding-top: 3%;
+    
+    
   }
 
 
@@ -58,6 +60,7 @@ html, body {
   z-index: 999;
   background-color: #545c64;
 
+  text-align: left;
 }
 
 .el-menu-demo .el-menu-item {
@@ -66,14 +69,8 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffd04b; /* 設定鼠標懸停時的字體顏色 */
+  
 }
-
-.el-menu-demo :hover {
-  color: #ffd04b; /* 設定鼠標懸停時的字體顏色 */
-
-}
-
 
 
 .circle{
