@@ -20,9 +20,7 @@
 
         <div id="app">
         <!--navigation -->
-        <el-menu class="el-menu-demo" mode="horizontal" @select="navigateTo" background-color="#545c64"
-        text-color="#fff"
-        active-text-color="#ffd04b">
+        <el-menu class="el-menu-demo" mode="horizontal" @select="navigateTo" background-color="#545c64" text-color="#fff" >
             <el-menu-item  index="index.html">About me</el-menu-item>
             <el-menu-item  index="projects.html">Projects</el-menu-item>
         </el-menu>
@@ -119,10 +117,10 @@
         },
         methods: {
             navigateTo(page) {
-                window.scrollTo(0, 0); 
                 window.location.href = page;
               },
         }
+
     })
 </script>
 

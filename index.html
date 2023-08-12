@@ -19,7 +19,7 @@
 <body class="center">
     <div id="app">
         <!--navigation -->
-    <div>
+    <div >
         <el-menu class="el-menu-demo" mode="horizontal" @select="navigateTo" background-color="#545c64"
         text-color="#fff"
         active-text-color="#ffd04b" >
@@ -154,10 +154,10 @@
 
         methods: {
             navigateTo(page) {
-                window.scrollTo(0, 0); 
                 window.location.href = page;
             },
 
         }
+
     })
 </script>
