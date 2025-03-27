@@ -1,163 +1,327 @@
+.io/index.html
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta property="og:title" content="Wilson's website">
-    <meta property="og:description" content="About me">
-    <meta property="og:image" content="me.jpg">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-    <link href="style.css" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <meta property="og:title" content="Wilson Chang - Portfolio">
+    <meta property="og:description" content="Personal portfolio of Wilson Chang - Software Engineer">
+    <meta property="og:image" content="me.jpg">
+    
+    <title>Chen-Wei (Wilson) Chang - Software Engineer</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">Chen-Wei (Wilson) Chang</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<body class="center">
-    <div id="app">
-        <!--navigation -->
-        <el-menu class="el-menu-demo" mode="horizontal" @select="navigateTo" background-color="#545c64"
-        text-color="#fff"
-        active-text-color="#ffd04b" >
-            <el-menu-item  index="index.html">About me</el-menu-item>
-            <el-menu-item  index="projects.html">Projects</el-menu-item>
-        </el-menu>
-        <!--profile picture-->
-        <el-col>
-            <div class="circle">
-                <div class="block" >
-                    
-                    <el-avatar shape="square" :size="230" :src="circleUrl"></el-avatar>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="me.jpg" alt="Wilson Chang">
+                </div>
+                <div class="hero-text">
+                    <h1>Hi, I'm <span>Chen-Wei (Wilson) Chang</span></h1>
+                    <p>Research Assistant at Virginia Tech | MS in Computer Science</p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn primary-btn">Learn More</a>
+                        <a href="assets/Wilson_Chang_Resume.pdf" target="_blank" class="btn secondary-btn">Download Resume</a>
+                    </div>
                 </div>
             </div>
-        </el-col>
-        <!--info-->
-        <span>Hi, I'm Wilson Chang</span>
-        <br>
-        <el-button type="text" @click="centerDialogVisible = true">More about me</el-button>
-        <el-dialog title="HiHiHi" :visible.sync="centerDialogVisible" center>
-            <p style="word-break: normal">
-                Welcome to my website. I'm using Vue.js and Element UI to build up this website.<br> I am a graduate of National Dong Hwa University, major in Computer Science and Information Engineering.<br> Mainly I want to share some of the projects
-                and stuffs that I've done at school.<br>
-            </p>
-        </el-dialog>
-        <!--link-->
-        <h2>Contact Me</h2>
-        <el-divider></el-divider>
-        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1%;">
-            <i class="el-icon-message"></i>
-            <h5 style="margin: 0; margin-left: 10px;">wilson891221@gmail.com</h5>
-          </div>
-          <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 2%;">
-            <i class="el-icon-phone-outline"></i>
-            <h5 style="margin: 0; margin-left: 10px;">+886-934307866</h5>
-          </div>
-
-        <el-card shadow="hover" class="box-card">
-            <div>
-                <i class="fab fa-github fa-1x" style="color: rgb(0, 0, 0);"></i>
-                <el-link href="https://github.com/wilsonchang17">Github</el-link><br><br>
-                <i class="fab fa-linkedin fa-1x" style="color: rgb(0, 0, 0); "></i>
-                <el-link href="https://www.linkedin.com/in/chen-wei-chang-30994720a/" >Linkedin</el-link><br><br>
-                <i class="fab fa-facebook fa-1x" style="color: rgb(0, 0, 0); "></i>
-                <el-link href="https://www.facebook.com/profile.php?id=100007509667977" >Facebook</el-link><br><br>
-                <i class="fab fa-instagram fa-1x" style="color: rgb(0, 0, 0);"></i>
-                <el-link href="https://www.instagram.com/wilsonnchang/" >Instagram</el-link><br>
-            </div>
-        </el-card>
-
-        <br>
-        <h2>Experience</h2>
-        <el-divider></el-divider>
-        <div class="block">
-            <el-timeline>
-                <el-timeline-item timestamp="2023/2 ~ 2023/6" placement="top">
-                    <el-card>
-                        <h4>Teaching Assistant (Fundamental computer programming-Python course), NDHU</h4>
-                        <p> - Drew up examinations,graded and explained programming assignments for approximately 100 students.</p>
-                    </el-card>
-                </el-timeline-item>
-                <el-timeline-item timestamp="2023/1 ~ 2023/2" placement="top">
-                    <el-card>
-                        <h4>Intern, Digital Information Department, Shin Kong Financial Holding Co., Ltd., Head office, Taiwan</h4>
-                        <p> - Assisted in the front-end and back-end development of the website using Vue.js and Spring Boot.</p>
-                        <p> - Built tools for analyzing and organizing data with Python programs.
-                        </p>
-                    </el-card>
-                </el-timeline-item>
-                <el-timeline-item timestamp="2022/9 ~ 2023/6" placement="top">
-                    <el-card>
-                        <h4>Part-time worker, Academy of English Empowerment, NDHU</h4>
-                        <p>Sent and received official documents, and completed miscellaneous tasks as assigned.</p>
-                    </el-card>
-                </el-timeline-item>
-                <el-timeline-item timestamp="2021/9 ~ 2022/5" placement="top">
-                    <el-card>
-                        <h4>Google Developer Students Clubs(Core team member), NDHU</h4>
-                        <p> - Collaborated on lecture courses with other members.</p>
-                        <p> - Taught and explained Python packages</p>
-                    </el-card>
-                </el-timeline-item>
-
-                <el-timeline-item timestamp="2021/8 ~ 2022/7" placement="top">
-                    <el-card>
-                        <h4>Graduation Project: <br>A Q&A Platform with Automatic Post Review Based on Natural Language Processing and Deep Learning</h4>
-                        <p> - Excellent Award, NDHU CSIE Department</p>
-                        <p> - 4 students group project</p>
-
-                    </el-card>
-                </el-timeline-item>
-
-                <el-timeline-item timestamp="2020/9 ~ 2021/1" placement="top">
-                    <el-card>
-                        <h4>Member, Hult Prize at NDHU, Hult Prize Foundation</h4>
-                        <p> - Cooperated with 20-30 students to organize Hult Prize intramural competition.</p>
-                    </el-card>
-                </el-timeline-item>
-
-                <el-timeline-item timestamp="2020/4" placement="top">
-                    <el-card>
-                        <h4>2020 Hult Prize Ho Chi Minh Regional Summit</h4>
-                        <p> - Representing National Dong Hwa University in the Regional Summit(Ho Chi Minh City, Vietnam).</p>
-                    </el-card>
-                </el-timeline-item>
-
-            </el-timeline>
-            
-            <br><br><br>
-
         </div>
+    </section>
 
-    </div>
-    <footer style="padding-bottom: 2%;">
-        Copyright © 2023 Wilson Chang, All Rights Reserved.
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I’m a Computer Science master’s student at Virginia Tech with hands-on experience in full-stack development, machine learning, and LLMs. My background includes research in adversarial scam detection using fine-tuned LLaMA models and a multi-model voting system. During my internship at Shin Kong Financial Holding, I developed automation tools to reduce manual processing time, including converting legacy files and streamlining internal workflows.
+                </p>
+                <p>
+                I’ve also built projects like an e-commerce platform with a real-time shopping cart system, an AI-powered recipe generator using OpenAI and Google Cloud APIs, and a web app that automatically reviews posts using NLP. I enjoy turning ideas into working systems and aim to bridge innovative research with real-world impact.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            
+            <!-- Virginia Tech Research Assistant -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-logo">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="experience-details">
+                        <h3>Research Assistant</h3>
+                        <h4>Virginia Tech, Alexandria, VA</h4>
+                        <p class="experience-period">August 2026 - Present</p>
+                    </div>
+                </div>
+                <div class="experience-body">
+                    <ul class="experience-bullets">
+                        <li>Developed a multi-model voting system integrating traditional ML and LLMs</li>
+                        <li>Enhanced scam detection by fine-tuning LLaMA3 8B with LoRA technique</li>
+                        <li>Implemented adversarial evaluation framework using various LLM APIs</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Shin Kong Financial -->
+            <div class="experience-card" style="margin-top: 3rem;">
+                <div class="experience-header">
+                    <div class="experience-logo">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <div class="experience-details">
+                        <h3>Software Intern, Digital Information Department</h3>
+                        <h4>Shin Kong Financial Holding Co., Ltd., Taipei, Taiwan</h4>
+                        <p class="experience-period">January 2023 - February 2023</p>
+                    </div>
+                </div>
+                <div class="experience-body">
+                    <ul class="experience-bullets">
+                        <li>Developed Python automation tools for data processing and analysis</li>
+                        <li>Built a Python GUI application to convert legacy file formats to CSV</li>
+                        <li>Created a Vue.js frontend with Element UI for credit card information management</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Teaching Assistant -->
+            <div class="experience-card" style="margin-top: 3rem;">
+                <div class="experience-header">
+                    <div class="experience-logo">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="experience-details">
+                        <h3>Teaching Assistant, Python Programming</h3>
+                        <h4>National Dong Hwa University, Hualien, Taiwan</h4>
+                        <p class="experience-period">September 2021 - May 2022</p>
+                    </div>
+                </div>
+                <div class="experience-body">
+                    <ul class="experience-bullets">
+                        <li>Drew up examinations, graded and explained programming assignments for approximately 100 students.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- GDSC -->
+            <div class="experience-card" style="margin-top: 3rem;">
+                <div class="experience-header">
+                    <div class="experience-logo">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="experience-details">
+                        <h3>Core Team Member</h3>
+                        <h4>Google Developer Student Clubs (GDSC), NDHU</h4>
+                        <p class="experience-period">September 2021 - May 2022</p>
+                    </div>
+                </div>
+                <div class="experience-body">
+                    <ul class="experience-bullets">
+                        <li>Collaborated on lecture courses with other members</li>
+                        <li>Taught and explained Python packages.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            
+            <!-- Virginia Tech - Master's -->
+            <div class="education-card">
+                <div class="education-header">
+                    <div class="education-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Master of Science in Computer Science</h3>
+                        <h4>Virginia Tech, Alexandria, VA</h4>
+                        <p class="education-period">2024 - 2026</p>
+                    </div>
+                </div>
+                <div class="education-body">
+                    <p><strong>Relevant Coursework:</strong> Software Engineering, Web Application Development, Database Management Systems</p>
+                    <p><strong>Research Position:</strong> Research Assistant (August 2026 - present)</p>
+                </div>
+            </div>
+            
+            <!-- NDHU - Bachelor's -->
+            <div class="education-card" style="margin-top: 3rem;">
+                <div class="education-header">
+                    <div class="education-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Bachelor of Science in Computer Science and Information Engineering</h3>
+                        <h4>National Dong Hwa University, Taiwan</h4>
+                        <p class="education-period">2019 - 2023</p>
+                    </div>
+                </div>
+                <div class="education-body">
+                    <p><strong>GPA:</strong> 3.77/4.0</p>
+                    <p><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Database Systems, Operating Systems, Web Programming, Computer Networks, Machine Learning, AI, Deep Learning</p>
+                    <p><strong>Graduate Project:</strong> "A Q&A Platform with Automatic Post Review Based on NLP and Deep Learning" - Received Excellent Award</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Swift</span>
+                        <span class="skill-tag">Solidity</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-globe"></i> Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">RESTful API</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-toolbox"></i> Toolkits and Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">pytest</span>
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">Tkinter</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">openpyxl</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">NLTK</span>
+                        <span class="skill-tag">PyTorch</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-server"></i> Technology & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Heroku</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">VMware (Linux)</span>
+                        <span class="skill-tag">Xcode</span>
+                        <span class="skill-tag">VSCode</span>
+                        <span class="skill-tag">Code::Blocks</span>
+                        <span class="skill-tag">Anaconda</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>wilsonchang@vt.edu</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+15715947580</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Alexandria, VA, USA</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/wilsonchang17" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chen-wei-chang-30994720a/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100007509667977" target="_blank" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/wilsonnchang/" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Wilson Chang. All Rights Reserved.</p>
+        </div>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
-<script src="https://unpkg.com/vue@2/dist/vue.js"></script>
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
-<script>
-    new Vue({
-        el: '#app',
-        data() {
-            return {
-                circleUrl: "me.jpg",
-                centerDialogVisible: false,
-
-
-            };
-        },
-
-        methods: {
-            navigateTo(page) {
-                window.location.href = page;
-            },
-
-        }
-
-    })
-</script>
