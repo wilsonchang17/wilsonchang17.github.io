@@ -1901,3 +1901,36 @@ button::-moz-focus-inner {
     width: 100%; /* Full width on mobile */
   }
 }
+
+/* Visitor Stats Section */
+.visitor-stats {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.visitor-counter {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.visitor-counter i {
+    color: #0077cc;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.visitor-counter p {
+    margin: 0;
+    font-weight: 500;
+}
+
+#visit-count {
+    color: #0077cc;
+    font-weight: 700;
+    margin-left: 5px;
+}
