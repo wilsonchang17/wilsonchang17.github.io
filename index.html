@@ -336,18 +336,26 @@
     <script src="js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Replace YOUR_SITE_ID with a unique identifier for your site
+            // Create a timestamp parameter to prevent caching
+            const timestamp = new Date().getTime();
             const siteId = "wilsonchangio";
             
-            // Create the script element
-            const script = document.createElement('script');
-            script.src = `https://api.countapi.xyz/hit/${siteId}/visits/?callback=websiteVisits`;
-            document.body.appendChild(script);
-
-            // Callback function to update counter
-            window.websiteVisits = function(response) {
-                document.getElementById('webcounter').textContent = response.value.toLocaleString();
-            };
+            // Using fetch API instead of script injection (more reliable)
+            fetch(`https://api.countapi.xyz/hit/${siteId}/visits?t=${timestamp}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Counter response:", data);
+                    document.getElementById('webcounter').textContent = data.value.toLocaleString();
+                })
+                .catch(error => {
+                    console.error('Error fetching count:', error);
+                    document.getElementById('webcounter').textContent = "...";
+                });
         });
     </script>
 </body>
