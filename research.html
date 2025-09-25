@@ -63,6 +63,9 @@
                 <p>
                     My research centers on enhancing the security and reliability of large language models (LLMs), especially in adversarial settings. I study how subtle modifications in scam messages can exploit LLM vulnerabilities and lead to misclassifications. To address this, I develop adversarial benchmarks, structured perturbation techniques, and hybrid detection systems that combine fine-tuned LLMs with traditional machine learning models. These contributions aim to strengthen the robustness of LLM-based systems against real-world manipulative attacks.
                 </p>
+                <p>
+                    During my 2025 internship with TSMC’s AI R&D group, I applied these ideas to high-volume semiconductor manufacturing by deploying Qwen3 models on NVIDIA H100 GPUs and automating anomaly detection workflows. The real-world feedback loop from that work continues to inform my research directions.
+                </p>
                 <p>Key research areas include:</p>
                 <ul>
                     <li>Adversarial attacks against large language models</li>
@@ -125,16 +128,57 @@
             <!-- Publication 2 -->
             <div class="publication">
                 <div class="publication-content">
+                    <h3>RailEstate: An Interactive System for Metro Linked Property Trends</h3>
+                    <div class="publication-meta">
+                        <p class="authors"><strong>Chen-Wei Chang</strong>, Yu-Chieh Cheng, Yun-En Tsai, Fanglan Chen, Chang-Tien Lu</p>
+                        <p class="conference">33rd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL '25), Minneapolis, MN, USA</p>
+                        <p class="pub-status published">Published</p>
+                    </div>
+                    <div class="publication-abstract">
+                        <h4>Abstract</h4>
+                        <p>
+                            RailEstate is a web-based analytics platform that fuses 25 years of Washington metropolitan housing data with WMATA transit infrastructure to surface metro-linked price trends. The system supports interactive spatial queries, time-series visualizations, forecasting, and a natural language to SQL chatbot that transforms plain-English questions into optimized PostGIS queries. By unifying spatial databases, forecasting pipelines, and LLM-powered interfaces, RailEstate delivers actionable, transit-aware housing insights for planners, investors, and residents without requiring technical expertise.
+                        </p>
+                    </div>
+                    <div class="publication-details">
+                        <div class="publication-detail">
+                            <h4>Contributions</h4>
+                            <ul>
+                                <li>Deployed a Supabase-hosted PostGIS stack with spatial indexing for low-latency metro proximity analytics</li>
+                                <li>Integrated React/Leaflet visualizations and Recharts time-series views for interactive metro-centric price exploration</li>
+                                <li>Built a LangChain and GPT-4o-mini text-to-SQL chatbot that executes validated natural language housing queries in real time</li>
+                            </ul>
+                        </div>
+                        <div class="publication-detail">
+                            <h4>Impact</h4>
+                            <ul>
+                                <li>Enables non-technical audiences to interrogate transit-oriented development patterns instantly</li>
+                                <li>Supports data-driven planning decisions with forecasts that capture infrastructure and economic shifts</li>
+                                <li>Provides a portable architecture for geospatial housing intelligence in additional metro areas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="publication-links">
+                        <a href="https://drive.google.com/file/d/1ujuQyJPZ4Ue6OdzaY93Ta3etgJ3aCEAa/view?usp=sharing" class="pub-link paper" target="_blank">
+                            <i class="fas fa-file-pdf"></i> View Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publication 3 -->
+            <div class="publication">
+                <div class="publication-content">
                     <h3>Scam Shield: Multi-Model Voting and Fine-Tuned LLMs Against Adversarial Attacks</h3>
                     <div class="publication-meta">
                         <p class="authors"><strong>Chen-Wei Chang</strong>, et al.</p>
-                        <p class="conference">2025 European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)</p>
+                        <p class="conference">2025 IEEE International Conference on Big Data (IEEE BigData 2025), Macau SAR, China</p>
                         <p class="pub-status under-review">Under Review</p>
                     </div>
                     <div class="publication-abstract">
                         <h4>Abstract</h4>
                         <p>
-                            Scam detection remains a critical challenge in cybersecurity, especially with the increasing sophistication of adversarial scam mes- sages designed to evade detection. This work proposes a Hierarchical Scam Detection System (HSDS) that integrates multi-model voting with a fine-tuned LLaMA 3.1 8B Instruct model to improve detection ac- curacy and robustness against adversarial attacks. Our approach lever- ages a four-model ensemble for initial scam classification, where each model independently evaluates scam messages, and a majority voting mechanism determines preliminary predictions. The final classification is refined using a fine-tuned LLaMA 3.1 8B Instruct model, optimized through adversarial training to mitigate misclassification risks. Experi- mental results demonstrate that our hierarchical framework significantly enhances scam detection performance, surpassing both traditional ma- chine learning models and larger proprietary LLMs, such as GPT-3.5 Turbo, while maintaining computational efficiency. The findings high- light the effectiveness of a hybrid voting mechanism and adversarial fine- tuning in fortifying LLMs against evolving scam tactics, enhancing the resilience of automated scam detection systems.
+                            Scam detection remains a critical challenge in cybersecurity, especially with the increasing sophistication of adversarial scam messages designed to evade detection. This work proposes a Hierarchical Scam Detection System (HSDS) that integrates multi-model voting with a fine-tuned LLaMA 3.1 8B Instruct model to improve detection accuracy and robustness against adversarial attacks. Our approach leverages a four-model ensemble for initial scam classification, where each model independently evaluates scam messages, and a majority voting mechanism determines preliminary predictions. The final classification is refined using a fine-tuned LLaMA 3.1 8B Instruct model, optimized through adversarial training to mitigate misclassification risks. Experimental results demonstrate that our hierarchical framework significantly enhances scam detection performance, surpassing both traditional machine learning models and larger proprietary LLMs, such as GPT-3.5 Turbo, while maintaining computational efficiency. The findings highlight the effectiveness of a hybrid voting mechanism and adversarial fine-tuning in fortifying LLMs against evolving scam tactics, enhancing the resilience of automated scam detection systems.
                         </p>
                     </div>
                     <div class="publication-details">
