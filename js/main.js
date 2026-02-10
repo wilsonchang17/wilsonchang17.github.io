@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update downloadable resume links to the Google Drive URL
     const downloadResumeLinks = document.querySelectorAll('.download-resume, a[href*="Wilson_Chang_Resume.pdf"]');
-    const newResumeUrl = "https://drive.google.com/file/d/1q6cKpuA9zU1fkVrGUQNr0vrpjOL9lBld/view?usp=sharing";
+    const newResumeUrl = "https://drive.google.com/file/d/1hfs5WGo8XUDiDpbBeL5ureTbcR_XxKY4/view?usp=sharing";
     
     downloadResumeLinks.forEach(link => {
         link.href = newResumeUrl;
