@@ -1,30 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Wilson Chang - Projects">
-    <meta property="og:description" content="Projects by Wilson Chang">
-    <meta property="og:image" content="me.jpg">
+    <title>Projects | Chen-Wei (Wilson) Chang | Software Engineering and AI Systems</title>
+    <meta name="description" content="Projects by Chen-Wei Chang, also known as Wilson Chang, covering full-stack development, AI systems, LLM security, geospatial analytics, and production-focused software engineering.">
+    <link rel="canonical" href="https://wilsonchang17.github.io/projects.html">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Projects | Chen-Wei (Wilson) Chang | Software Engineering and AI Systems">
+    <meta property="og:description" content="Explore software engineering, AI, LLM security, and full-stack projects built by Chen-Wei Chang, also known as Wilson Chang.">
+    <meta property="og:url" content="https://wilsonchang17.github.io/projects.html">
+    <meta property="og:image" content="https://wilsonchang17.github.io/me.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | Chen-Wei (Wilson) Chang">
+    <meta name="twitter:description" content="Project portfolio for Chen-Wei Chang, also known as Wilson Chang.">
+    <meta name="twitter:image" content="https://wilsonchang17.github.io/me.jpg">
 
-    <title>Wilson Chang - Portfolio</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Chen-Wei Chang",
+          "alternateName": ["Wilson Chang", "Chen-Wei (Wilson) Chang"],
+          "url": "https://wilsonchang17.github.io/"
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "Scam Shield",
+          "author": {
+            "@type": "Person",
+            "name": "Chen-Wei Chang",
+            "alternateName": "Wilson Chang"
+          },
+          "codeRepository": "https://github.com/wilsonchang17/scam-shield",
+          "programmingLanguage": ["Python", "FastAPI"],
+          "description": "Hierarchical scam detection system combining multi-model voting, fine-tuned LLaMA 3.1, and adversarial evaluation."
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "RailEstate",
+          "author": {
+            "@type": "Person",
+            "name": "Chen-Wei Chang",
+            "alternateName": "Wilson Chang"
+          },
+          "codeRepository": "https://github.com/wilsonchang17/DMV-houseprice-map",
+          "programmingLanguage": ["TypeScript", "Python", "SQL"],
+          "description": "Full-stack metro linked property trend analytics platform with geospatial search and an LLM-powered chatbot."
+        }
+      ]
+    }
+    </script>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Navigation -->
     <header>
         <div class="container">
             <nav class="navbar">
@@ -46,19 +83,17 @@
         </div>
     </header>
 
-    <!-- Projects Hero -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text" style="flex: 1;">
-                    <h1>My <span>Projects</span></h1>
-                    <p>A collection of my work, showcasing my skills and experience</p>
+                    <h1>Projects by <span>Chen-Wei (Wilson) Chang</span></h1>
+                    <p>Software engineering, AI, LLM security, and geospatial systems spanning FastAPI, React, PostgreSQL, LangChain, and production-focused automation.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Project Filters -->
     <section class="project-filter-section">
         <div class="container">
             <div class="project-filters">
@@ -71,18 +106,15 @@
         </div>
     </section>
 
-    <!-- Projects Grid -->
     <section class="projects">
         <div class="container">
             <div class="projects-grid">
-                <!-- Project: Scam Shield (NEW) -->
                 <div class="project-card" data-category="web ml">
                     <div class="project-image">
-                        <img src="projectpic/scam-shield.png" alt="Scam Shield Project">
+                        <img src="projectpic/scam-shield.png" alt="Scam Shield project by Chen-Wei Wilson Chang">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/wilsonchang17/scam-shield" target="_blank"
-                                    class="project-link">
+                                <a href="https://github.com/wilsonchang17/scam-shield" target="_blank" rel="noopener" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -92,10 +124,9 @@
                         <div class="project-header">
                             <h3>Scam Shield: Adversarial Scam Detection</h3>
                         </div>
-                        <p>Hierarchical scam detection system integrating multi-model voting with fine-tuned LLaMA 3.1
-                            8B. IEEE BigData 2025.</p>
+                        <p>Chen-Wei Chang built a hierarchical LLM security pipeline that combines multi-model voting, fine-tuned LLaMA 3.1, FastAPI services, and adversarial evaluation to improve scam detection accuracy for IEEE BigData 2025.</p>
                         <div class="project-tags">
-                            <span class="tag">LLaMA 3</span>
+                            <span class="tag">LLaMA 3.1</span>
                             <span class="tag">Python</span>
                             <span class="tag">FastAPI</span>
                             <span class="tag">Scikit-learn</span>
@@ -103,14 +134,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project: RailEstate (NEW) -->
+
                 <div class="project-card" data-category="web ml">
                     <div class="project-image">
-                        <img src="projectpic/dmv-houseprice.png" alt="RailEstate Project">
+                        <img src="projectpic/dmv-houseprice.png" alt="RailEstate project by Chen-Wei Wilson Chang">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/wilsonchang17/DMV-houseprice-map" target="_blank"
-                                    class="project-link">
+                                <a href="https://github.com/wilsonchang17/DMV-houseprice-map" target="_blank" rel="noopener" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -120,8 +150,7 @@
                         <div class="project-header">
                             <h3>RailEstate: DMV Metro Property Trends</h3>
                         </div>
-                        <p>Full-stack housing price map system for the DMV area with interactive analytics and a
-                            chatbot. Accepted by ACM SIGSPATIAL 2025.</p>
+                        <p>Wilson Chang designed a full-stack geospatial analytics system that joins 25 years of housing data with transit infrastructure using React, FastAPI, PostgreSQL/PostGIS, LangChain, and interactive mapping.</p>
                         <div class="project-tags">
                             <span class="tag">React.js</span>
                             <span class="tag">FastAPI</span>
@@ -131,14 +160,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project: E-commerce Platform (NEW) -->
+
                 <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <img src="projectpic/bookstore.png" alt="E-commerce Platform">
+                        <img src="projectpic/bookstore.png" alt="Full-stack e-commerce platform by Chen-Wei Wilson Chang">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/wilsonchang17/CWbookstore?tab=readme-ov-file"
-                                    target="_blank" class="project-link">
+                                <a href="https://github.com/wilsonchang17/CWbookstore?tab=readme-ov-file" target="_blank" rel="noopener" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -147,29 +175,24 @@
                     <div class="project-info">
                         <div class="project-header">
                             <h3>Full-Stack E-commerce Shopping Platform</h3>
-
                         </div>
-                        <p>A comprehensive e-commerce platform with real-time cart functionality, user authentication,
-                            and product management.</p>
+                        <p>Chen-Wei Chang delivered a production-style shopping platform with account management, product operations, and real-time cart behavior using React, TypeScript, MySQL, and RESTful APIs.</p>
                         <div class="project-tags">
                             <span class="tag">HTML/CSS</span>
                             <span class="tag">TypeScript</span>
                             <span class="tag">React.js</span>
                             <span class="tag">MySQL</span>
-                            <span class="tag">RESTful API</span>
-
+                            <span class="tag">REST API</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project: AI Recipe Generator (NEW) -->
                 <div class="project-card" data-category="web ml">
                     <div class="project-image">
-                        <img src="projectpic/bite1.png" alt="AI Recipe Generator">
+                        <img src="projectpic/bite1.png" alt="AI recipe generator by Chen-Wei Wilson Chang">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/wilsonchang17/Biteology" target="_blank"
-                                    class="project-link">
+                                <a href="https://github.com/wilsonchang17/Biteology" target="_blank" rel="noopener" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -178,10 +201,8 @@
                     <div class="project-info">
                         <div class="project-header">
                             <h3>AI-Powered Recipe Generator</h3>
-
                         </div>
-                        <p>A web application that leverages AI to generate personalized recipes based on available
-                            ingredients or food images.</p>
+                        <p>Wilson Chang built an AI-assisted recipe application that turns available ingredients or food images into personalized meal ideas through a Flask backend, React frontend, and OpenAI-enabled generation flow.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Flask</span>
@@ -192,16 +213,15 @@
                     </div>
                 </div>
 
-                <!-- Project: WES GPA -->
                 <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <img src="projectpic/wesgpa.png" alt="WES GPA Project">
+                        <img src="projectpic/wesgpa.png" alt="WES GPA converter by Chen-Wei Wilson Chang">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/wilsonchang17/WES_GPA" target="_blank" class="project-link">
+                                <a href="https://github.com/wilsonchang17/WES_GPA" target="_blank" rel="noopener" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="https://wesgpa.herokuapp.com" target="_blank" class="project-link">
+                                <a href="https://wesgpa.herokuapp.com" target="_blank" rel="noopener" class="project-link">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -210,29 +230,25 @@
                     <div class="project-info">
                         <div class="project-header">
                             <h3>WES GPA Converter</h3>
-
                         </div>
-                        <p>Convert NDHU's GPA into WES GPA standard for international applications</p>
+                        <p>Chen-Wei Chang created a GPA conversion tool for international applications using Flask, Selenium, and BeautifulSoup to automate academic data workflows for students.</p>
                         <div class="project-tags">
-
                             <span class="tag">HTML/CSS</span>
                             <span class="tag">Python</span>
                             <span class="tag">Flask</span>
-                            <span class="tag">selenium</span>
+                            <span class="tag">Selenium</span>
                             <span class="tag">BeautifulSoup</span>
                             <span class="tag">Heroku</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project: Q&A Platform -->
                 <div class="project-card" data-category="web ml">
                     <div class="project-image">
-                        <img src="projectpic/graduationproject.png" alt="Q&A Platform Project">
+                        <img src="projectpic/graduationproject.png" alt="Q&A platform with NLP by Chen-Wei Wilson Chang">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/michael21910/ndhu-csie-plus" target="_blank"
-                                    class="project-link">
+                                <a href="https://github.com/michael21910/ndhu-csie-plus" target="_blank" rel="noopener" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -240,10 +256,9 @@
                     </div>
                     <div class="project-info">
                         <div class="project-header">
-                            <h3>Q&A Platform with NLP</h3>
-
+                            <h3>Q&amp;A Platform with NLP</h3>
                         </div>
-                        <p>A Q&A Platform with Automatic Post Review Based on NLP and Deep Learning</p>
+                        <p>Wilson Chang contributed to an academic Q&amp;A platform that used NLP and deep learning to review posts automatically and improve moderation quality for student communities.</p>
                         <div class="project-tags">
                             <span class="tag">HTML/CSS</span>
                             <span class="tag">ML/AI</span>
@@ -253,14 +268,12 @@
                     </div>
                 </div>
 
-                <!-- Project: Smart Contract -->
                 <div class="project-card" data-category="web blockchain">
                     <div class="project-image">
-                        <img src="projectpic/smartcontract.png" alt="Smart Contract Project">
+                        <img src="projectpic/smartcontract.png" alt="Coupon distribution with smart contracts by Chen-Wei Wilson Chang">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/wilsonchang17/coupon_smartcontract" target="_blank"
-                                    class="project-link">
+                                <a href="https://github.com/wilsonchang17/coupon_smartcontract" target="_blank" rel="noopener" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -269,9 +282,8 @@
                     <div class="project-info">
                         <div class="project-header">
                             <h3>Coupon Distribution with Smart Contracts</h3>
-
                         </div>
-                        <p>Website integrating smart contracts for distributing digital coupons</p>
+                        <p>Chen-Wei Chang developed a blockchain-backed coupon distribution website that integrates Solidity smart contracts with a JavaScript interface for digital redemption workflows.</p>
                         <div class="project-tags">
                             <span class="tag">Blockchain</span>
                             <span class="tag">Smart Contracts</span>
@@ -281,13 +293,12 @@
                     </div>
                 </div>
 
-                <!-- Project: iOS App -->
                 <div class="project-card" data-category="mobile">
                     <div class="project-image">
-                        <img src="projectpic/swift.png" alt="iOS App Project">
+                        <img src="projectpic/swift.png" alt="Taiwan attractions app by Chen-Wei Wilson Chang">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/wilsonchang17" target="_blank" class="project-link">
+                                <a href="https://github.com/wilsonchang17" target="_blank" rel="noopener" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -296,9 +307,8 @@
                     <div class="project-info">
                         <div class="project-header">
                             <h3>Taiwan Attractions App</h3>
-
                         </div>
-                        <p>iOS application showcasing top attractions in Taiwan</p>
+                        <p>Wilson Chang built an iOS application in Swift to present Taiwan travel destinations through a mobile-first experience with curated attraction details and navigation-friendly browsing.</p>
                         <div class="project-tags">
                             <span class="tag">iOS</span>
                             <span class="tag">Swift</span>
@@ -307,14 +317,12 @@
                     </div>
                 </div>
 
-                <!-- Project: Face Mask Detection -->
                 <div class="project-card" data-category="ml">
                     <div class="project-image">
-                        <img src="projectpic/mask.png" alt="Face Mask Detection">
+                        <img src="projectpic/mask.png" alt="Face mask detection project by Chen-Wei Wilson Chang">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/michael21910/face-mask-detection" target="_blank"
-                                    class="project-link">
+                                <a href="https://github.com/michael21910/face-mask-detection" target="_blank" rel="noopener" class="project-link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -323,9 +331,8 @@
                     <div class="project-info">
                         <div class="project-header">
                             <h3>Face Mask Detection</h3>
-
                         </div>
-                        <p>Real-time face mask detection using computer vision and deep learning</p>
+                        <p>Chen-Wei Chang worked on a computer vision pipeline for real-time face mask detection using CNN-based deep learning models deployed for live video analysis.</p>
                         <div class="project-tags">
                             <span class="tag">ML/AI</span>
                             <span class="tag">CNN</span>
@@ -338,77 +345,67 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title">Contact Chen-Wei (Wilson) Chang</h2>
             <div class="contact-content">
                 <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <span>Chen-Wei (Wilson) Chang</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Software Engineer and AI/LLM Researcher</span>
+                    </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <span>wilsonchang@vt.edu</span>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+15715947580</span>
-                    </div>
-                    <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Alexandria, VA, USA</span>
+                        <span>Alexandria, Virginia, United States</span>
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/wilsonchang17" target="_blank" class="social-link">
+                    <a href="https://github.com/wilsonchang17" target="_blank" rel="noopener" class="social-link" aria-label="Chen-Wei Wilson Chang GitHub profile">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/chen-wei-chang-30994720a/" target="_blank" class="social-link">
+                    <a href="https://www.linkedin.com/in/chen-wei-chang-30994720a/" target="_blank" rel="noopener" class="social-link" aria-label="Chen-Wei Wilson Chang LinkedIn profile">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://www.facebook.com/profile.php?id=100007509667977" target="_blank"
-                        class="social-link">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/wilsonnchang/" target="_blank" class="social-link">
-                        <i class="fab fa-instagram"></i>
+                    <a href="assets/Resume_Wilson%20Chang.pdf" target="_blank" rel="noopener" class="social-link" aria-label="Chen-Wei Wilson Chang resume PDF">
+                        <i class="fas fa-file-pdf"></i>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Wilson Chang. All Rights Reserved.</p>
+            <p>&copy; 2026 Chen-Wei (Wilson) Chang. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
     <script>
-        // Project Filter Functionality
         document.addEventListener('DOMContentLoaded', function () {
             const filterButtons = document.querySelectorAll('.filter-btn');
             const projectCards = document.querySelectorAll('.project-card');
 
             filterButtons.forEach(button => {
                 button.addEventListener('click', function () {
-                    // Remove active class from all buttons
                     filterButtons.forEach(btn => btn.classList.remove('active'));
-                    // Add active class to clicked button
                     this.classList.add('active');
 
                     const filter = this.getAttribute('data-filter');
 
                     projectCards.forEach(card => {
-                        if (filter === 'all') {
+                        if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
                             card.style.display = 'block';
                         } else {
-                            if (card.getAttribute('data-category').includes(filter)) {
-                                card.style.display = 'block';
-                            } else {
-                                card.style.display = 'none';
-                            }
+                            card.style.display = 'none';
                         }
                     });
                 });
@@ -416,5 +413,4 @@
         });
     </script>
 </body>
-
 </html>
