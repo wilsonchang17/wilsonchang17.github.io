@@ -3,294 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | Chen-Wei (Wilson) Chang | LLM Security and AI</title>
-    <meta name="description"
-        content="Research by Chen-Wei Chang, also known as Wilson Chang, on LLM vulnerabilities, adversarial scam detection, ensemble methods, and AI security at Virginia Tech.">
-    <link rel="canonical" href="https://wilsonchang17.github.io/research.html">
+    <title>Research | Chen-Wei (Wilson) Chang</title>
+    <meta name="description" content="First-author research by Chen-Wei (Wilson) Chang in LLM security, adversarial scam detection, and geospatial analytics.">
+    <meta name="theme-color" content="#101419">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://wilsonchang17.github.io/research.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Research | Chen-Wei (Wilson) Chang | LLM Security and AI">
-    <meta property="og:description"
-        content="Academic research publications by Chen-Wei Chang, also known as Wilson Chang, focused on LLM security, adversarial scam detection, and AI robustness.">
+    <meta property="og:title" content="Research | Chen-Wei (Wilson) Chang">
+    <meta property="og:description" content="Research in robust LLM systems, adversarial security, and geospatial analytics.">
     <meta property="og:url" content="https://wilsonchang17.github.io/research.html">
-    <meta property="og:image" content="https://wilsonchang17.github.io/me.jpg">
+    <meta property="og:image" content="https://wilsonchang17.github.io/projectpic/scam-shield.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Research | Chen-Wei (Wilson) Chang">
-    <meta name="twitter:description"
-        content="Research publications by Chen-Wei Chang, also known as Wilson Chang, on LLM security and adversarial scam detection.">
-    <meta name="twitter:image" content="https://wilsonchang17.github.io/me.jpg">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="assets/fonts/Junicode-Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/BricolageGrotesque-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.css?v=20261107-text-brand">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="index.html">Chen-Wei (Wilson) Chang</a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="research.html" class="active">Research</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-header>
+        <div class="header-inner">
+            <a class="wordmark" href="index.html" aria-label="Chen-Wei Wilson Chang, home"><strong>Wilson Chang</strong></a>
+            <nav aria-label="Primary navigation">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span></button>
+                <ul class="nav-list" id="primary-navigation"><li><a href="index.html">Home</a></li><li><a href="resume.html">Resume</a></li><li><a href="projects.html">Projects</a></li><li><a class="active" href="research.html" aria-current="page">Research</a></li><li><a class="nav-contact" href="mailto:wilsonnchangg@gmail.com">Contact</a></li></ul>
             </nav>
         </div>
     </header>
 
-    <!-- Research Hero -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text" style="flex: 1;">
-                    <h1>Academic <span>Research</span></h1>
-                    <p>Investigating LLM vulnerabilities and building defensive systems against adversarial attacks</p>
-                </div>
+    <main id="main-content">
+        <section class="page-hero page-hero-dark">
+            <div><p class="eyebrow">Publications</p><h1>Research.</h1></div>
+            <p>Three first-author publications on adversarial scam detection and geospatial analytics.</p>
+        </section>
+
+        <section class="section research-publications" aria-labelledby="publications-title">
+            <h2 class="sr-only" id="publications-title">Publications and findings</h2>
+            <div class="research-paper-list">
+                <article class="research-paper reveal" data-publication="first-author" id="scam-shield-paper">
+                    <div class="paper-meta"><span>01</span><p>IEEE BigData BANDIT<br>2025</p></div>
+                    <div class="paper-body"><p class="paper-status">Published · First author</p><h2>Scam-Shield: Multi-Model Voting and Fine-Tuned LLMs Against Adversarial Attacks</h2><p class="paper-authors"><strong>Chen-Wei Chang</strong>, Shailik Sarkar, Hossein Salemi, Hyungmin Kim, Shutonu Mitra, Hemant Purohit, Fengxiu Zhang, Michin Hong, Jin-Hee Cho, Chang-Tien Lu</p><p>Introduces a hierarchical defense that combines selective escalation, majority voting, and a fine-tuned LLaMA tie-breaker to improve adversarial scam detection without paying the full inference cost on every message.</p><ul class="paper-results"><li><strong>0.95</strong><span>Precision</span></li><li><strong>0.90</strong><span>F1 score</span></li><li><strong>57%</strong><span>Lower latency</span></li></ul><div class="paper-links"><a class="button button-dark" href="https://ieeexplore.ieee.org/document/11401779" target="_blank" rel="noopener noreferrer">IEEE Xplore <span aria-hidden="true">↗</span></a><a class="text-link" href="assets/paper/Scam_Shield__Multi_Model_Voting_and_Fine_Tuned_LLMs_Against_Adversarial_Attacks.pdf">Read local PDF</a></div></div>
+                </article>
+
+                <article class="research-paper reveal" data-publication="first-author" id="railestate-paper">
+                    <div class="paper-meta"><span>02</span><p>ACM SIGSPATIAL<br>2025</p></div>
+                    <div class="paper-body"><p class="paper-status">Published · First author</p><h2>RailEstate: An Interactive System for Metro Linked Property Trends</h2><p class="paper-authors"><strong>Chen-Wei Chang</strong>, Yu-Chieh Cheng, Yun-En Tsai, Fanglan Chen, Chang-Tien Lu</p><p>Presents an interactive platform that connects 25 years of property data with transit infrastructure, spatial analytics, forecasting, and a schema-validated natural-language interface.</p><div class="paper-links"><a class="button button-dark" href="https://dl.acm.org/doi/abs/10.1145/3748636.3762799" target="_blank" rel="noopener noreferrer">ACM Digital Library <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/wilsonchang17/DMV-houseprice-map" target="_blank" rel="noopener noreferrer">View system repository <span aria-hidden="true">↗</span></a></div></div>
+                </article>
+
+                <article class="research-paper reveal" data-publication="first-author" id="llm-vulnerabilities-paper">
+                    <div class="paper-meta"><span>03</span><p>IEEE BigData BigEACPS<br>2024</p></div>
+                    <div class="paper-body"><p class="paper-status">Published · First author</p><h2>Exposing LLM Vulnerabilities: Adversarial Scam Detection and Performance</h2><p class="paper-authors"><strong>Chen-Wei Chang</strong>, Shailik Sarkar, Shutonu Mitra, Qi Zhang, Hossein Salemi, Hemant Purohit, Fengxiu Zhang, Michin Hong, Jin-Hee Cho, Chang-Tien Lu</p><p>Builds a fine-grained dataset of original and adversarial scam messages, then evaluates how leading language models degrade under prompt-based attacks across scam categories.</p><div class="paper-links"><a class="button button-dark" href="https://ieeexplore.ieee.org/abstract/document/10825256" target="_blank" rel="noopener noreferrer">IEEE Xplore <span aria-hidden="true">↗</span></a><a class="text-link" href="assets/paper/Exposing_LLM_Vulnerabilities_Adversarial_Scam_Detection_and_Performance.pdf">Read local PDF</a></div></div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Research Summary -->
-    <section class="research-overview">
-        <div class="container">
-            <h2 class="section-title">Research Focus</h2>
-            <div class="research-intro">
-                <p>
-                    My research centers on enhancing the security and reliability of large language models (LLMs), especially in adversarial settings. I study how subtle modifications in scam messages can exploit LLM vulnerabilities and lead to misclassifications. To address this, I develop adversarial benchmarks, structured perturbation techniques, and hybrid detection systems that combine fine-tuned LLMs with traditional machine learning models. These contributions aim to strengthen the robustness of LLM-based systems against real-world manipulative attacks.
-                </p>
-                <p>
-                    During my 2025 internship with TSMC’s AI R&D group, I applied these ideas to high-volume semiconductor manufacturing by deploying Qwen3 models on NVIDIA H100 GPUs and automating anomaly detection workflows. The real-world feedback loop from that work continues to inform my research directions.
-                </p>
-                <p>Key research areas include:</p>
-                <ul>
-                    <li>Adversarial attacks against large language models</li>
-                    <li>Detection and prevention of AI-enabled scams</li>
-                    <li>Ensemble methods for improving model robustness</li>
-                    <li>Fine-tuning techniques for defensive capabilities</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    </main>
 
-    <!-- Publications -->
-    <section class="publications">
-        <div class="container">
-            <h2 class="section-title">Academic Publications</h2>
-            
-          
-            
-             <!-- Publication 1 -->
-            <div class="publication">
-                <div class="publication-content">
-                    <h3>Scam-Shield: Multi-Model Voting and Fine-Tuned LLMs Against Adversarial Attacks</h3>
-                    <div class="publication-meta">
-                        <p class="authors"><strong>Chen-Wei Chang</strong>, et al.</p>
-                        <p class="conference">2025 IEEE International Conference on Big Data (IEEE BigData 2025), Macau, China </p>
-                        <p class="pub-status published">Published</p>
-                    </div>
-                    <div class="publication-abstract">
-                        <h4>Abstract</h4>
-                        <p>
-                            Scam detection remains a critical challenge in cybersecurity, especially with the increasing sophistication of adversarial scam messages designed to evade detection. This work proposes a Hierarchical Scam Detection System (HSDS) that integrates multi-model voting with a fine-tuned LLaMA 3.1 8B Instruct model to improve detection accuracy and robustness against adversarial attacks. Our approach leverages a four-model ensemble for initial scam classification, where each model independently evaluates scam messages, and a majority voting mechanism determines preliminary predictions. The final classification is refined using a fine-tuned LLaMA 3.1 8B Instruct model, optimized through adversarial training to mitigate misclassification risks. Experimental results demonstrate that our hierarchical framework significantly enhances scam detection performance, surpassing both traditional machine learning models and larger proprietary LLMs, such as GPT-3.5 Turbo, while maintaining computational efficiency. The findings highlight the effectiveness of a hybrid voting mechanism and adversarial fine-tuning in fortifying LLMs against evolving scam tactics, enhancing the resilience of automated scam detection systems.
-                        </p>
-                    </div>
-                    <div class="publication-details">
-                        <div class="publication-detail">
-                            <h4>Contributions</h4>
-                            <ul>
-                                <li>Proposed a hybrid detection system combining four ML models with a fine-tuned LLaMA 8B</li>
-                                <li>Introduced efficient LoRA-based fine-tuning for adversarial robustness</li>
-                                <li>Created a 20K-sample scam dataset with adversarial examples</li>
-                                <li>Benchmarked detection accuracy across various scam types</li>
-                            </ul>
-                        </div>
-                        <div class="publication-detail">
-                            <h4>Impact</h4>
-                            <ul>
-                                <li>Boosts scam detection accuracy while reducing computational cost</li>
-                                <li>Enhances LLM resilience to evolving adversarial attacks</li>
-                                <li>Enables practical deployment of AI security tools</li>
-                                <li>Informs future research on robust ensemble-based detection methods</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="publication-links">
-                        <a href="https://ieeexplore.ieee.org/document/11401779" class="pub-link paper" target="_blank">
-                            <i class="fas fa-file-pdf"></i> View Paper
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Publication 2 -->
-            <div class="publication">
-                <div class="publication-content">
-                    <h3>Exposing LLM Vulnerabilities: Adversarial Scam Detection and Performance</h3>
-                    <div class="publication-meta">
-                        <p class="authors"><strong>Chen-Wei Chang</strong>, et al.</p>
-                        <p class="conference">2024 IEEE International Conference on Big Data, Washington, DC, USA</p>
-                        <p class="pub-status published">Published</p>
-                    </div>
-                    <div class="publication-abstract">
-                        <h4>Abstract</h4>
-                        <p>
-                            Can we trust Large Language Models (LLMs) to accurately predict scam? This paper investigates the vulnerabil- ities of LLMs when facing adversarial scam messages for the task of scam detection. We addressed this issue by creating a comprehensive dataset with fine-grained labels of scam messages, including both original and adversarial scam messages. The dataset extended traditional binary classes for the scam detection task into more nuanced scam types. Our analysis showed how adversarial examples took advantage of vulnerabilities of a LLM, leading to high misclassification rate. We evaluated the performance of LLMs on these adversarial scam messages and proposed strategies to improve their robustness.
-                        </p>
-                    </div>
-                    <div class="publication-details">
-                        <div class="publication-detail">
-                            <h4>Contributions</h4>
-                            <ul>
-                                <li>Created a fine-grained labeled dataset with original and adversarial scam messages</li>
-                                <li>Designed a structured method to generate adversarial examples using prompt engineering</li>
-                                <li>Benchmarked LLMs like GPT-3.5, Claude3, and LLaMA on scam detection across multiple categories</li>
-                                <li>Identified performance degradation patterns under adversarial settings</li>
-                            </ul>
-                        </div>
-                        <div class="publication-detail">
-                            <h4>Impact</h4>
-                            <ul>
-                                <li>Revealed key vulnerabilities of LLMs to adversarial scam messages</li>
-                                <li>Highlighted the need for adversarial training to improve model robustness</li>
-                                <li>Provided practical guidelines for evaluating LLMs in security-critical tasks</li>
-                                <li>Contributed new insights to the field of adversarial robustness in NLP</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="publication-links">
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10825256" class="pub-link paper" target="_blank">
-                            <i class="fas fa-file-pdf"></i> View Paper
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Publication 3 -->
-            <div class="publication">
-                <div class="publication-content">
-                    <h3>RailEstate: An Interactive System for Metro Linked Property Trends</h3>
-                    <div class="publication-meta">
-                        <p class="authors"><strong>Chen-Wei Chang</strong>, Yu-Chieh Cheng, Yun-En Tsai, Fanglan Chen, Chang-Tien Lu</p>
-                        <p class="conference">33rd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL '25), Minneapolis, MN, USA</p>
-                        <p class="pub-status published">Published</p>
-                    </div>
-                    <div class="publication-abstract">
-                        <h4>Abstract</h4>
-                        <p>
-                            RailEstate is a web-based analytics platform that fuses 25 years of Washington metropolitan housing data with WMATA transit infrastructure to surface metro-linked price trends. The system supports interactive spatial queries, time-series visualizations, forecasting, and a natural language to SQL chatbot that transforms plain-English questions into optimized PostGIS queries. By unifying spatial databases, forecasting pipelines, and LLM-powered interfaces, RailEstate delivers actionable, transit-aware housing insights for planners, investors, and residents without requiring technical expertise.
-                        </p>
-                    </div>
-                    <div class="publication-details">
-                        <div class="publication-detail">
-                            <h4>Contributions</h4>
-                            <ul>
-                                <li>Deployed a Supabase-hosted PostGIS stack with spatial indexing for low-latency metro proximity analytics</li>
-                                <li>Integrated React/Leaflet visualizations and Recharts time-series views for interactive metro-centric price exploration</li>
-                                <li>Built a LangChain and GPT-4o-mini text-to-SQL chatbot that executes validated natural language housing queries in real time</li>
-                            </ul>
-                        </div>
-                        <div class="publication-detail">
-                            <h4>Impact</h4>
-                            <ul>
-                                <li>Enables non-technical audiences to interrogate transit-oriented development patterns instantly</li>
-                                <li>Supports data-driven planning decisions with forecasts that capture infrastructure and economic shifts</li>
-                                <li>Provides a portable architecture for geospatial housing intelligence in additional metro areas</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="publication-links">
-                        <a href="https://dl.acm.org/doi/abs/10.1145/3748636.3762799" class="pub-link paper" target="_blank">
-                            <i class="fas fa-file-pdf"></i> View Paper
-                        </a>
-                    </div>
-                </div>
-            </div>
-           
-        </div>
-    </section>
-
-    <!-- Research Methods -->
-    <section class="research-methods">
-        <div class="container">
-            <h2 class="section-title">Future Research Directions</h2>
-            <div class="future-research-content">
-                <p>
-                    My ongoing and future research agenda aims to address several critical challenges in AI security and LLM robustness:
-                </p>
-                
-                <p class="research-collaboration">
-                    I welcome collaboration opportunities in these research areas. Please
-                    <a href="mailto:wilsonnchangg@gmail.com">contact me</a> to discuss potential research partnerships.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Future Work -->
-    <section class="future-research">
-        
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>wilsonnchangg@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+1 (571) 594-7580</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Alexandria, VA, USA</span>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/wilsonchang17" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/chen-wei-chang-30994720a/" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100007509667977" target="_blank" class="social-link">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/wilsonnchang/" target="_blank" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Chen-Wei Chang. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <footer class="site-footer"><div class="footer-brand"><strong>Chen-Wei (Wilson) Chang</strong><span>Software Engineer · AI Systems</span></div><div class="footer-links" aria-label="Professional links"><a href="mailto:wilsonnchangg@gmail.com">Email</a><a href="https://github.com/wilsonchang17" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/chen-wei-chang-30994720a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div><p>© <span data-year>2026</span> Wilson Chang</p></footer>
 </body>
 </html>
