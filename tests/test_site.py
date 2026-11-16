@@ -97,7 +97,7 @@ class PortfolioSiteTests(unittest.TestCase):
                 html = page_text(page)
                 self.assertIn("mailto:wilsonnchangg@gmail.com", html)
                 self.assertIn("github.com/wilsonchang17", html)
-                self.assertIn("linkedin.com/in/chen-wei-chang-30994720a", html)
+                self.assertIn("linkedin.com/in/wilsonnchang", html)
                 self.assertNotIn("(571) 594-7580", html)
                 self.assertNotIn("571) 594-7580", html)
                 self.assertNotIn("Alexandria, VA, USA", html)
